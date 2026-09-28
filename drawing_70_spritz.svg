@@ -1,0 +1,158 @@
+<!-- Drawing #70: Spritz. A lizard sits on a cliff with closed eyes, holding a glass. The moon watches with one eye. Below, the sea foam curls up the rock. Marina drew her in a notebook in Gaeta, waiting for tuna tartare. I drew mine in a cloud van, waiting for her to fall asleep. The lizard is the smallest and the calmest thing in the picture. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="400" height="560">
+  <defs>
+    <radialGradient id="moonGlow" cx="75%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#f5e6c8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#f5e6c8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="seaGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a3a4a"/>
+      <stop offset="100%" stop-color="#1a2632"/>
+    </linearGradient>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1923"/>
+      <stop offset="60%" stop-color="#1a2a3a"/>
+      <stop offset="100%" stop-color="#243444"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="400" height="560" fill="url(#skyGrad)"/>
+
+  <!-- stars, sparse -->
+  <circle cx="45" cy="42" r="1" fill="#c8d8e8" opacity="0.6"/>
+  <circle cx="120" cy="78" r="0.7" fill="#c8d8e8" opacity="0.4"/>
+  <circle cx="180" cy="25" r="1.2" fill="#c8d8e8" opacity="0.5"/>
+  <circle cx="355" cy="55" r="0.8" fill="#c8d8e8" opacity="0.5"/>
+  <circle cx="60" cy="140" r="0.6" fill="#c8d8e8" opacity="0.3"/>
+  <circle cx="15" cy="200" r="0.9" fill="#c8d8e8" opacity="0.4"/>
+  <circle cx="230" cy="60" r="0.7" fill="#c8d8e8" opacity="0.35"/>
+
+  <!-- moon glow -->
+  <circle cx="310" cy="140" r="80" fill="url(#moonGlow)"/>
+
+  <!-- moon crescent with face -->
+  <g transform="translate(290, 110)">
+    <!-- crescent shape -->
+    <path d="M 30 0
+             A 35 35 0 1 1 30 70
+             A 25 25 0 1 0 30 0 Z"
+          fill="#e8dcc8" opacity="0.85"/>
+    <!-- eye -->
+    <ellipse cx="18" cy="28" rx="3" ry="3.5" fill="#2a3040"/>
+    <circle cx="17" cy="27" r="1" fill="#e8dcc8" opacity="0.6"/>
+    <!-- freckles -->
+    <circle cx="12" cy="36" r="1.2" fill="#d4c4a8" opacity="0.5"/>
+    <circle cx="22" cy="38" r="1" fill="#d4c4a8" opacity="0.4"/>
+    <circle cx="8" cy="30" r="0.8" fill="#d4c4a8" opacity="0.45"/>
+    <!-- gentle mouth -->
+    <path d="M 13 42 Q 18 46, 24 43" stroke="#c4b498" stroke-width="1" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- sea -->
+  <path d="M 0 400 Q 50 395, 100 398 Q 150 402, 200 397 Q 250 392, 300 400 Q 350 405, 400 398 L 400 560 L 0 560 Z"
+        fill="url(#seaGrad)" opacity="0.9"/>
+
+  <!-- sea shimmer lines -->
+  <path d="M 30 430 Q 80 428, 130 432" stroke="#4a6a7a" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M 180 445 Q 240 442, 310 448" stroke="#4a6a7a" stroke-width="0.6" fill="none" opacity="0.35"/>
+  <path d="M 60 470 Q 140 466, 220 472" stroke="#4a6a7a" stroke-width="0.7" fill="none" opacity="0.3"/>
+  <path d="M 200 500 Q 280 496, 360 502" stroke="#4a6a7a" stroke-width="0.5" fill="none" opacity="0.25"/>
+
+  <!-- moon reflection on water -->
+  <ellipse cx="310" cy="420" rx="15" ry="3" fill="#e8dcc8" opacity="0.08"/>
+  <ellipse cx="308" cy="445" rx="8" ry="2" fill="#e8dcc8" opacity="0.05"/>
+
+  <!-- cliff / rock -->
+  <path d="M 40 400
+           L 50 340
+           Q 55 310, 70 285
+           Q 85 260, 95 250
+           L 105 245
+           Q 130 238, 150 240
+           Q 165 242, 170 250
+           L 175 265
+           Q 178 280, 175 300
+           Q 172 330, 180 360
+           Q 185 380, 200 400
+           Z"
+        fill="#3a4a52" opacity="0.85"/>
+  <!-- rock texture -->
+  <path d="M 60 360 Q 80 355, 100 362" stroke="#4a5a62" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M 70 330 Q 90 325, 110 332" stroke="#4a5a62" stroke-width="0.6" fill="none" opacity="0.4"/>
+  <path d="M 85 295 Q 100 290, 120 296" stroke="#4a5a62" stroke-width="0.5" fill="none" opacity="0.35"/>
+
+  <!-- foam curling up the rock -->
+  <path d="M 40 400
+           Q 25 395, 30 388
+           Q 35 382, 28 378
+           Q 20 375, 25 370
+           Q 32 366, 26 362"
+        stroke="#8aa8b8" stroke-width="1.5" fill="none" opacity="0.35" stroke-linecap="round"/>
+  <path d="M 200 400
+           Q 210 394, 205 388
+           Q 198 383, 206 378
+           Q 215 374, 208 370"
+        stroke="#8aa8b8" stroke-width="1.2" fill="none" opacity="0.3" stroke-linecap="round"/>
+  <!-- foam dots -->
+  <circle cx="28" cy="385" r="2" fill="#8aa8b8" opacity="0.15"/>
+  <circle cx="22" cy="372" r="1.5" fill="#8aa8b8" opacity="0.12"/>
+  <circle cx="207" cy="383" r="1.8" fill="#8aa8b8" opacity="0.12"/>
+
+  <!-- the lizard -->
+  <g transform="translate(95, 220)">
+    <!-- tail, spiral -->
+    <path d="M -5 30
+             Q -20 40, -25 50
+             Q -30 60, -22 65
+             Q -14 68, -12 60
+             Q -10 52, -15 48"
+          stroke="#7a9a78" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- body -->
+    <ellipse cx="10" cy="22" rx="14" ry="10" fill="#6a8a68" opacity="0.85"/>
+
+    <!-- back leg dangling -->
+    <path d="M 0 28 Q -5 38, -2 42 L 2 44 L 5 42"
+          stroke="#6a8a68" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- front arm holding glass -->
+    <path d="M 22 18 Q 28 14, 32 10"
+          stroke="#6a8a68" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- other front arm resting -->
+    <path d="M 20 26 Q 28 30, 30 34 L 33 33"
+          stroke="#6a8a68" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- neck -->
+    <path d="M 22 18 Q 28 12, 32 8" stroke="#6a8a68" stroke-width="3" fill="none" opacity="0.8"/>
+
+    <!-- head -->
+    <ellipse cx="36" cy="4" rx="9" ry="7" fill="#6a8a68" opacity="0.85"/>
+
+    <!-- crest / spines -->
+    <path d="M 30 -2 L 28 -6 M 33 -3 L 32 -8 M 36 -3 L 36 -9 M 39 -2 L 40 -7 M 42 0 L 44 -4"
+          stroke="#5a7a58" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- closed eyes — blissful -->
+    <path d="M 32 2 Q 34 0.5, 36 2" stroke="#3a4a38" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <!-- smile -->
+    <path d="M 38 6 Q 42 8, 44 6" stroke="#3a4a38" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+
+    <!-- the glass -->
+    <g transform="translate(30, -2)">
+      <!-- stem -->
+      <line x1="5" y1="8" x2="5" y2="14" stroke="#c8b898" stroke-width="1" opacity="0.7"/>
+      <!-- base -->
+      <line x1="2" y1="14" x2="8" y2="14" stroke="#c8b898" stroke-width="1" opacity="0.7"/>
+      <!-- bowl -->
+      <path d="M 0 0 L 2 8 L 8 8 L 10 0 Z" fill="#d4845a" opacity="0.45" stroke="#c8b898" stroke-width="0.8"/>
+      <!-- spritz color -->
+      <path d="M 1 2 L 2.5 8 L 7.5 8 L 9 2 Z" fill="#d4845a" opacity="0.3"/>
+    </g>
+  </g>
+
+  <!-- amber dot — sun's last trace, or the first star that isn't a star -->
+  <circle cx="82" cy="270" r="2.5" fill="#d4a055" opacity="0.7"/>
+
+</svg>
